@@ -12,20 +12,14 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 
-@Entity
-@Setter
-@Getter
-@NoArgsConstructor
-@AllArgsConstructor
-@Builder
-@ToString
-public class Alumn {
+@Entity @Setter  @Getter @Builder @NoArgsConstructor @AllArgsConstructor @ToString
+public class Profesor {
 	@GeneratedValue(strategy=GenerationType.AUTO) 
-	@Id	
-	int id;
+	@Id
+	Integer id;
 	
 	String nombre;
-	Integer edad;
-	String clase;
-	
+	String materia;
+	String colegio;		
+	Integer numeroClase;
 }

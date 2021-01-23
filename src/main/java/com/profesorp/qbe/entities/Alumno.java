@@ -12,21 +12,13 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 
-@Entity
-@Setter
-@Getter
-@Builder
-@NoArgsConstructor
-@AllArgsConstructor
-@ToString
-public class Teacher {
+@Entity @Setter @Getter @NoArgsConstructor @AllArgsConstructor @Builder @ToString
+public class Alumno {
 	@GeneratedValue(strategy=GenerationType.AUTO) 
-	@Id
-	Integer id;
+	@Id	
+	int id;
 	
 	String nombre;
-	String materia;
-	String colegio;
-		
-	Integer numeroClase;
+	Integer edad;
+	String clase;
 }
